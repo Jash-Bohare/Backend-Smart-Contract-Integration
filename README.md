@@ -1,12 +1,15 @@
+## Backend – Smart Contract Integration Test
 
-Hi Candidates,
+This project demonstrates a backend API that connects to a public Ethereum smart contract and fetches on-chain data.
 
-This at-home assessment is designed to evaluate your ability to integrate backend systems with smart contracts.
-The objective is to confirm your proficiency in establishing a successful connection between the backend and smart contracts.
+### Implemented API
+- Endpoint: `/Jash_Test`
+- Uses ethers.js with a public Ethereum RPC
+- Reads data from USDC ERC20 contract
+- Fetches name, symbol, and total supply
+- Logs data to console and returns JSON response
 
-You'll need to add a new API called (Your Name)_Test to the server/index.js file. 
-This API will allow you to fetch some information from pre-deployed or public smart contracts.
-There’s no need for a front-end interface; just log the results to the console to demonstrate your work.
-Once you've completed the test, please share me a public repo what you've done.
-
-Looking forward to seeing your work—give it your best!
+### How to run
+```bash
+npm install
+npm start
